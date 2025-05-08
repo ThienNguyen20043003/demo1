@@ -1,0 +1,493 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #00dc64;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f08282;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.desktop {
+  min-width: 1400px;
+}
+
+.header__menu {
+  padding: 10px 48px;
+  background-color: #f08080;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__list li {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.header__menu-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header__title {
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.header__button--publish {
+  padding: 12px 24px;
+  background: #27272a;
+  color: #f08383;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.header__button--login {
+  padding: 12px 24px;
+  border: 1px solid #27272a;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.header__banner {
+  width: 100%;
+  background: url(./images/bannerIP.webp) no-repeat center center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__banner-section {
+  width: 25%;
+  position: relative;
+}
+
+.banner__section--1 {
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+}
+
+.banner__section--2 {
+  position: absolute;
+  top: -15px;
+  left: -8px;
+}
+
+.main-content {
+  width: 1125px;
+  margin: 0 auto;
+}
+.main__week {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #fe9797;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main__week-list {
+  display: flex;
+  align-items: center;
+}
+
+.main__week-list li {
+  padding: 18px 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main__week-list--active {
+  background-color: var(--primary-color);
+  color: #f17f7f;
+}
+
+.main__top {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 40px;
+  gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e78a8a;
+}
+
+.main__section-connet {
+  display: none;
+}
+
+.top-item.item-1 {
+  background: url(./images/image1.jpg) no-repeat center center/cover;
+}
+.top-item.item-2 {
+  background: url(./images/image2.jpg) no-repeat center center/cover;
+}
+.top-item.item-3 {
+  background: url(./images/image3.jpg) no-repeat center center/cover;
+}
+.top-item.item-4 {
+  background: url(./images/image4.jpg) no-repeat center center/cover;
+}
+.top-item.item-5 {
+  background: url(./images/image5.jpg) no-repeat center center/cover;
+}
+
+.item {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  width: 210px;
+  height: 210px;
+}
+
+.item:hover .main__section-connet {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #210808;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  color: #f8efef;
+}
+.main__section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main__section-head h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main__section-head p {
+  font-size: 14px;
+}
+.scan {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-item .scan {
+  background-color: var(--primary-color);
+  color: #fcf6f6;
+}
+
+.main__content-head h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main__content-head p {
+  font-size: 14px;
+}
+
+.main__content--desc {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f4f2f2;
+  font-size: 10px;
+}
+
+.main__new {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #fef0f0;
+}
+
+.headline {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.main__new-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.new-item.item-1 {
+  background: url(./images/image4.jpg) no-repeat center center/cover;
+}
+
+.new-item.item-2 {
+  background: url(./images/image5.jpg) no-repeat center center/cover;
+}
+
+.new-item.item-3 {
+  background: url(./images/image2.jpg) no-repeat center center/cover;
+}
+
+.new-item.item-4 {
+  background: url(./images/iPhone-16-Mock-Back-1.jpg) no-repeat center
+    center/cover;
+  width: 100%;
+  flex: 2;
+  color: #fff;
+}
+
+.new-item .scan {
+  background-color: #000;
+  color: var(--primary-color);
+  font-size: 10px;
+}
+
+.genres-item .scan {
+  font-size: 10px;
+  background-color: #f3f4f6;
+  color: var(--primary-color);
+}
+
+.trending {
+  background-color: #fff;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.trending-content {
+  width: 1125px;
+  margin: 0 auto;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.trending-list {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10pxx;
+}
+
+.trendng-list-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 0;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.trending-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.trending-info__txt {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trending-auth {
+  font-size: 12px;
+  color: #a3a3a3;
+}
+.footer {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  width: 100%;
+  background-color: #f3f4f6;
+}
+.footer-app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-icon path {
+  fill: #000;
+}
+
+.footer-list {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.icon-menu {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 20px 0;
+  background-color: #ffffff;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-decoration: none;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.menu-item img {
+  width: 36px;
+  height: auto;
+  margin-bottom: 8px;
+}
+.trendng-list-item img {
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  margin-right: 15px; 
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 2px solid #f5eded;
+  border-radius: 25px;
+  padding: 8px 15px;
+  background-color: #fff;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 300px; /* Tăng độ rộng */
+}
+
+.search-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 8px;
+}
+.sticky-cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.sticky-cart img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.floating-warranty-logo {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.floating-warranty-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+/* Định dạng chung cho thanh điều hướng */
+.navbar {
+  background-color: rgb(240, 131, 131); /* Màu nền đỏ */
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Định dạng danh sách các mục */
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+/* Định dạng từng mục */
+.navbar-list li {
+  margin: 0 15px;
+}
+
+/* Định dạng liên kết */
+.navbar-list a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;  
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hiệu ứng hover */
+.navbar-list a:hover {
+  background-color: #fd9494;
+}
+
+
+
